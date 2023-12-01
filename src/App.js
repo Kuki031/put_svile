@@ -20,7 +20,7 @@ function App() {
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
-
+            borderBottom: "2px solid black"
           }}
         >
           <Header />
@@ -35,7 +35,7 @@ function App() {
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
-
+            borderBottom: "2px solid black"
           }}
         >
           <QuoteGen />
@@ -49,7 +49,7 @@ function App() {
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
-
+            borderBottom: "2px solid black"
           }}
         >
           <HrvatskaKulturnaPutovnica />
@@ -64,7 +64,7 @@ function App() {
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
-
+            borderBottom: "2px solid #fff"
           }}
         >
           <KruznaKreativnost />
@@ -78,7 +78,6 @@ function App() {
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
-
           }}
         >
           <PozivNaSuradnju />
