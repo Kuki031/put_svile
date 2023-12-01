@@ -15,12 +15,12 @@ function App() {
       <Parallax pages={5}>
         <ParallaxLayer
           style={{
-            backgroundImage: `url(${
-              process.env.PUBLIC_URL + "/assets/pozadina/pozadina4.jpg"
-            })`,
+            backgroundImage: `url(${process.env.PUBLIC_URL + "/assets/pozadina/pozadina4.jpg"
+              })`,
             backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
-            margin: "0 auto",
+
           }}
         >
           <Header />
@@ -30,12 +30,12 @@ function App() {
         <ParallaxLayer
           offset={1}
           style={{
-            backgroundImage: `url(${
-              process.env.PUBLIC_URL + "/assets/pozadina/pozadina7.webp"
-            })`,
+            backgroundImage: `url(${process.env.PUBLIC_URL + "/assets/pozadina/unknown.jpg"
+              })`,
             backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
-            margin: "0 auto",
+
           }}
         >
           <QuoteGen />
@@ -44,12 +44,12 @@ function App() {
         <ParallaxLayer
           offset={2}
           style={{
-            backgroundImage: `url(${
-              process.env.PUBLIC_URL + "/assets/pozadina/pozadina3.svg"
-            })`,
+            backgroundImage: `url(${process.env.PUBLIC_URL + "/assets/pozadina/pozadina3.svg"
+              })`,
             backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
-            margin: "0 auto",
+
           }}
         >
           <HrvatskaKulturnaPutovnica />
@@ -58,13 +58,13 @@ function App() {
         <ParallaxLayer
           offset={3}
           style={{
-            backgroundImage: `url(${
-              process.env.PUBLIC_URL +
+            backgroundImage: `url(${process.env.PUBLIC_URL +
               "/assets/pozadina/stacked-waves-haikei.svg"
-            })`,
+              })`,
             backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
-            margin: "0 auto",
+
           }}
         >
           <KruznaKreativnost />
@@ -73,12 +73,12 @@ function App() {
         <ParallaxLayer
           offset={4}
           style={{
-            backgroundImage: `url(${
-              process.env.PUBLIC_URL + "/assets/pozadina/pozadina9.svg"
-            })`,
+            backgroundImage: `url(${process.env.PUBLIC_URL + "/assets/pozadina/pozadina6.jpg"
+              })`,
             backgroundSize: "cover",
+            backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
-            margin: "0 auto",
+
           }}
         >
           <PozivNaSuradnju />

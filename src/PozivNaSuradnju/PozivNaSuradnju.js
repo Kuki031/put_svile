@@ -29,7 +29,7 @@ export const PozivNaSuradnju = () => {
 
   return (
     <>
-      <div className="poziv-na-suradnju-box">
+      <div className="poziv-na-suradnju-box" id="poziv-na-suradnju-box">
         <div className="info-socials">
           <div className="info-items">
             <h3>Adresa</h3>
@@ -48,7 +48,7 @@ export const PozivNaSuradnju = () => {
                   src={
                     isFacebookHovered
                       ? process.env.PUBLIC_URL +
-                        "/assets/social/facebook-reverse.webp"
+                      "/assets/social/facebook-reverse.webp"
                       : process.env.PUBLIC_URL + "/assets/social/facebook.png"
                   }
                   alt="facebook link"
@@ -69,7 +69,7 @@ export const PozivNaSuradnju = () => {
                   src={
                     isYoutubeHovered
                       ? process.env.PUBLIC_URL +
-                        "/assets/social/youtube-reverse.png"
+                      "/assets/social/youtube-reverse.png"
                       : process.env.PUBLIC_URL + "/assets/social/yt2.png"
                   }
                   alt="youtube link"
@@ -90,7 +90,7 @@ export const PozivNaSuradnju = () => {
                   src={
                     isInstagramHovered
                       ? process.env.PUBLIC_URL +
-                        "/assets/social/instagram-reverse.png"
+                      "/assets/social/instagram-reverse.png"
                       : process.env.PUBLIC_URL + "/assets/social/instagram.png"
                   }
                   alt="instagram link"

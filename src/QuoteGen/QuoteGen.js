@@ -61,7 +61,6 @@ export const QuoteGen = () => {
           onClick={handleKhanClick}
         ></img>
       </section>
-
       <div className={isPoloModalOpen ? "modal polo" : "modal-closed"}>
         <h2>{poloFact}</h2>
         <button

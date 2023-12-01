@@ -2,7 +2,7 @@ import Accordion from "react-bootstrap/Accordion";
 
 export const HrvatskaKulturnaPutovnica = () => {
   return (
-    <div className="accordion-menu">
+    <div className="accordion-menu" id="accordion-menu">
       <Accordion defaultActiveKey="0">
         <h2 className="accordion-title">Hrvatska kulturna putovnica</h2>
         <Accordion.Item eventKey="0">

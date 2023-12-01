@@ -12,13 +12,6 @@ export const Vilijun = () => {
           </p>
           <span>-JASNA HORVAT</span>
         </article>
-        <div className="language-picker">
-          <select name="languages" id="language-select">
-            <option value="hrvatski">Hrvatski</option>
-            <option value="english">English</option>
-            <option value="内斯基">内斯基</option>
-          </select>
-        </div>
       </section>
     </>
   );

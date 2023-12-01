@@ -14,17 +14,18 @@ export const Ratings = () => {
     };
 
     // Make a POST request using Axios
+    if (!postData.rating || !postData.comment) return console.log("Cannot submit empty review.");
     axios
       .post("https://put-svile-backend.onrender.com/api/v1/reviews", postData)
       .then((response) => {
         console.log("Review submitted successfully:", response.data);
+
       })
       .catch((error) => {
         console.error("Error submitting review:", error);
         // Handle error accordingly
       });
   };
-
   return (
     <div>
       <form className="rating-form">
@@ -42,10 +43,11 @@ export const Ratings = () => {
             }}
           />
           <div className="comment-section">
-            <label htmlFor="komentar">Imaš li kakav komentar?</label>
+            <label htmlFor="komentar">Imate li kakav komentar?</label>
             <input
               type="text"
               id="komentar"
+              placeholder="Komentar unesite ovdje"
               onChange={(e) => setComment(e.target.value)}
             />
           </div>
@@ -54,10 +56,10 @@ export const Ratings = () => {
           type="button"
           value="Pošalji"
           onClick={handleSubmit}
-          placeholder="Komentar unesite ovdje"
           className="send-button"
         />
       </form>
     </div>
   );
 };
+
