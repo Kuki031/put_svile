@@ -17,7 +17,6 @@ export const QuoteGen = () => {
       console.log("Error fetching data:", error);
     }
   };
-
   const getKhanQuote = async () => {
     try {
       const response = await axios.get(`${quoteLink}/kublai-khan`);
@@ -45,13 +44,13 @@ export const QuoteGen = () => {
       <section className="quote-boxes">
         <img
           className="quote-img"
-          src={`${process.env.PUBLIC_URL + "/assets/krimg/marko.jpg"}`}
+          src={`${process.env.PUBLIC_URL + "/assets/krimg/polo.png"}`}
           alt="Marko Polo"
           onClick={handlePoloClick}
         ></img>
         <img
           className="quote-img"
-          src={`${process.env.PUBLIC_URL + "/assets/krimg/kubla.jpg"}`}
+          src={`${process.env.PUBLIC_URL + "/assets/krimg/kan.png"}`}
           alt="Kublaj Khan"
           onClick={handleKhanClick}
         ></img>

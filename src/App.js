@@ -15,7 +15,7 @@ function App() {
       <Parallax pages={5}>
         <ParallaxLayer
           style={{
-            backgroundImage: `url(${process.env.PUBLIC_URL + "/assets/pozadina/pozadina4.jpg"
+            backgroundImage: `url(${process.env.PUBLIC_URL + "/assets/pozadina/pos1.jpg"
               })`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
@@ -30,7 +30,7 @@ function App() {
         <ParallaxLayer
           offset={1}
           style={{
-            backgroundImage: `url(${process.env.PUBLIC_URL + "/assets/pozadina/unknown.jpg"
+            backgroundImage: `url(${process.env.PUBLIC_URL + "/assets/pozadina/pos4.png"
               })`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
@@ -59,7 +59,7 @@ function App() {
           offset={3}
           style={{
             backgroundImage: `url(${process.env.PUBLIC_URL +
-              "/assets/pozadina/stacked-waves-haikei.svg"
+              "/assets/pozadina/pos2.png"
               })`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
@@ -73,7 +73,7 @@ function App() {
         <ParallaxLayer
           offset={4}
           style={{
-            backgroundImage: `url(${process.env.PUBLIC_URL + "/assets/pozadina/pozadina6.jpg"
+            backgroundImage: `url(${process.env.PUBLIC_URL + "/assets/pozadina/pos7.png"
               })`,
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",

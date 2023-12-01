@@ -10,8 +10,9 @@ header {
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
-  background: linear-gradient(to right bottom, #e419e4, #f8def8);
+  background: linear-gradient(to right bottom, rgb(10, 10, 10), #dfc7df);
   width: 100%;
+  opacity: 1;
 }
 
 header .header-links {
@@ -24,7 +25,7 @@ header .header-links {
 
 header .header-links .main-logo {
   margin: 20px;
-  height: 5vh;
+  height: 7vh;
 }
 
 header .header-links .header-social-links {
@@ -39,6 +40,11 @@ header .header-links .header-social-links {
 header .header-links .header-social-links .header-social-link {
   margin: 10px;
   height: 5vh;
+  transition: all .5s;
+}
+
+header .header-links .header-social-links .header-social-link:hover {
+  transform: scale(0.8);
 }
 
 header .main-nav {
@@ -63,7 +69,6 @@ header .main-nav .nav-link {
   display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.6;
 }
 
 header .main-nav .nav-link:hover {
@@ -84,10 +89,11 @@ header .main-nav .nav-link:hover {
 
 .vilijun-box .text-box {
   margin: 10px;
-  background: linear-gradient(to right bottom, #e419e49f, #f8def8af);
+  margin-top: 4%;
   letter-spacing: 2px;
   padding: 5%;
   transition: all 1s;
+  font-weight: bolder;
   animation: appear 3s ease-in-out infinite;
   animation-fill-mode: backwards;
 }
@@ -104,22 +110,22 @@ header .main-nav .nav-link:hover {
 
 @keyframes appear {
   0% {
-    background-color: rgb(226, 11, 40);
+    background-color: rgb(49, 49, 49);
     opacity: 0.9;
   }
 
   80% {
-    background-color: rgb(212, 226, 14);
+    background-color: rgb(71, 69, 69);
     opacity: 0.9;
+  }
+
+  90% {
+    opacity: 0.9;
+    background-color: rgb(61, 56, 56);
   }
 
   100% {
-    opacity: 0.9;
-    background-color: rgb(226, 11, 40);
-  }
-
-  120% {
-    background-color: rgb(226, 11, 40);
+    background-color: rgb(49, 49, 49);
     opacity: 0.9;
   }
 }
@@ -138,6 +144,23 @@ header .main-nav .nav-link:hover {
   }
 }
 
+@keyframes glow {
+  0% {
+    box-shadow: 0px 0px 30px #313131;
+  }
+
+  20% {
+    box-shadow: 0px 0px 30px #edf1f1;
+  }
+
+  70% {
+    box-shadow: 0px 0px 30px #dfc7df;
+  }
+
+  100% {
+    box-shadow: 0px 0px 30px #313131;
+  }
+}
 
 
 .language-picker #language-select {
@@ -152,16 +175,17 @@ header .main-nav .nav-link:hover {
   flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
-  justify-content: center;
+  justify-content: space-evenly;
   margin: auto;
 }
 
 .quote-boxes .quote-img {
-  margin: 15px;
-  margin-top: 5%;
-  height: 25vh;
+  margin-top: 15%;
+  border-radius: 25%;
+  height: 30vh;
   transition: all .5s;
-  opacity: 0.8;
+  opacity: 1;
+  animation: glow infinite ease-in-out 2s;
 }
 
 .quote-boxes .quote-img:hover {
@@ -172,7 +196,7 @@ header .main-nav .nav-link:hover {
 
 .modal {
   position: fixed;
-  background: linear-gradient(to right bottom, #e419e49f, #f8def8af);
+  background: linear-gradient(to right bottom, rgba(10, 10, 10, 0.863), rgba(223, 199, 223, 0.842));
   margin: 20px;
   padding: 20px;
   color: white;
@@ -185,8 +209,8 @@ header .main-nav .nav-link:hover {
 
 .modal .close-button {
   position: absolute;
-  top: 10%;
-  right: 10%;
+  top: 0;
+  right: 3%;
   cursor: pointer;
   color: white;
   font-size: 2em;
@@ -207,13 +231,11 @@ header .main-nav .nav-link:hover {
 .accordion-menu {
   display: flex;
   align-items: center;
-  margin-top: 1%;
   justify-content: center;
   background: linear-gradient(to right bottom, #e41e1eec, #e9d9e9f5, rgba(21, 18, 219, 0.87));
   transition: all 1s;
   color: #fff;
   border-radius: 0 0 20% 20%;
-  margin: 10px;
   padding: 20px;
   scroll-behavior: smooth;
 }
@@ -255,7 +277,8 @@ header .main-nav .nav-link:hover {
   margin: auto;
   flex-wrap: wrap;
   flex-direction: column;
-  margin: 10px;
+  background: linear-gradient(to right bottom, rgb(10, 10, 10), #dfc7df);
+  opacity: 0.8;
 }
 
 .kruzna-kreativnost-box .kruzna-kreativnost-header {
@@ -338,19 +361,17 @@ header .main-nav .nav-link:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin: 5% 10%;
-  gap: 15%;
   color: #fff;
 
 }
 
 .ocjena svg {
-  scale: 2;
+  transform: scale(1.5);
+  color: yellow;
+  margin: 10px;
 }
 
-.ocjena svg:hover {
-  box-shadow: 5px 5px 10px yellow;
-}
+
 
 .rating-form {
   display: flex;
@@ -358,9 +379,6 @@ header .main-nav .nav-link:hover {
   justify-content: center;
   align-items: center;
   color: #fff;
-
-
-
 }
 
 .rating-form .comment-section {
@@ -379,22 +397,22 @@ header .main-nav .nav-link:hover {
   padding: 10px;
   text-align: center;
   border: none;
+  background-color: inherit;
 }
 
 .rating-form .send-button {
-  margin-top: 5px;
+  margin-top: 2px;
   padding: 2px;
-  color: #297EA6;
-  background-color: #fff;
+  color: #fffafa;
+  background-color: inherit;
   transition: 500ms;
+  font-weight: 400;
+  font-size: 1rem;
   border: none;
 }
 
 .rating-form .send-button:hover {
-  transform: scale(1.2);
-  box-shadow: 2px 2px 10px #e419e4;
-  background-color: #e419e4;
-  color: white;
+  transform: scale(0.9);
   cursor: pointer;
 }
 
@@ -402,7 +420,7 @@ footer {
   position: fixed;
   bottom: 0;
   width: 100%;
-  background: linear-gradient(to right bottom, #e419e4, #f8def8);
+  background: linear-gradient(to right bottom, rgb(10, 10, 10), #dfc7df);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -412,6 +430,7 @@ footer {
   font-weight: 400;
   font-size: 1em;
   padding: 2px;
+  opacity: 0.8;
 }
 
 * {
