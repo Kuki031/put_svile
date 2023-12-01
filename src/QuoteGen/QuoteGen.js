@@ -25,7 +25,7 @@ export const QuoteGen = () => {
     } catch (error) {
       console.log("Error fetching data:", error);
     };
-
+  }
   const handlePoloClick = () => {
     getPoloQuote();
     setTimeout(() => {
