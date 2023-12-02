@@ -35,7 +35,7 @@ function App() {
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
-            borderBottom: "2px solid black"
+            borderBottom: "2px solid #fff"
           }}
         >
           <QuoteGen />
@@ -49,7 +49,7 @@ function App() {
             backgroundSize: "cover",
             backgroundRepeat: "no-repeat",
             backgroundPosition: "center",
-            borderBottom: "2px solid black"
+            borderBottom: "2px solid black",
           }}
         >
           <HrvatskaKulturnaPutovnica />
